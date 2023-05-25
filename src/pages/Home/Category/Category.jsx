@@ -11,12 +11,14 @@ import slide5 from "../../../assets/home/slide5.jpg"
 
 
 import { Pagination } from "swiper";
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 
 
 const Category = () => {
     return (
-        <div>
+        <section>
+            <SectionTitle subHeading={"From 11.00am to 10.00pm"} heading={"Order Online"}/>
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
@@ -40,7 +42,7 @@ const Category = () => {
                 <SwiperSlide><img src={slide5} alt="" />
                     <h3 className="text-4xl text-white uppercase text-center -mt-16">salads</h3></SwiperSlide>
             </Swiper>
-        </div>
+        </section>
     );
 };
 
